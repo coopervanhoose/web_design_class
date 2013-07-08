@@ -2,32 +2,6 @@
 <head>
 <title>untitled-1</title>
 
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-      html, body, #map-canvas {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-		position: relative;
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
-var map;
-function initialize() {
-  var mapOptions = {
-    zoom: 10,
-    center: new google.maps.LatLng(34.0122, -118.4524),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
@@ -56,6 +30,8 @@ body {
 
 #map-canvas { left: 60%; width: 350px; height: 350px; }
 
+#footer1 { clear: both; color: #a90431; }
+
 </style>
 
 
@@ -79,7 +55,7 @@ John Mahoney
 
 <div id="map-canvas"></div>
 
-<div id="footer1"></div>
+<div id="footer1">copyright 2013. all rights reserved.</div>
 
 </div>
 
