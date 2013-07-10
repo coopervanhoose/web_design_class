@@ -1,64 +1,98 @@
 <html>
+<head>
+<title>Raven Pheat Recording Studio | Contact</title>
 
-  <head>
-  	<title>Raven Pheat Recording Studio | Contact</title>
-    
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-	<style type="text/css">
-    body {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 16px; color: #333; }
-body {background-color: #E4E4E4; background-image: url(images/bg.jpg); background-size: 100%; }
-    h1 {color: #a60731; font-size: 36px; }
-      
-    h3 {font-size: 16px; }
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 50%;
+		position: relative;
+      }
     </style>
-  
-  </head>
-  
-  <body bgcolor="#e4e4e4">
-  
-<div align="center">  
-  <h1>Raven Pheat</h1>
-    
-    <h3>Recording Studio</h3>
-    
-    <a href="home.html">home</a> | 
-    <a href="gallery.html">gallery</a> | 
-    <a href="pricing.html">pricing</a> | 
-    <a href="contact.html">contact</a> | 
-  <a href="https://maps.google.com/">google maps</a></div>
-    
-  <hr />
-    
-<div align="center"> 
-    
-    <h4>Recording Studio specializing in spoken word...</h4>
-    
-    <h5>Studio Partners:</h5>
-    
-    <h6><i>Cubase 6</i></h6>
-    
-    <h6><i>Fender</i></h6>
-    
-<img src="images/map_01" />
-    
-    <br />
-    
-    <a href="home.html"><img src="images/headerhome_01.jpg" width="200" height="100" /></a>
-    <a href="gallery.html"><img src="images/headergallery_01.jpg" width="200" height="100" />
-    <a href="pricing.html"><img src="images/headerpricing_01.jpg" width="200" height="100" />
-    <img src="images/headercontact_01.jpg" width="200" height="100" />
-    
-    <ul>
-    	<li>image 1 is my background without the raven</li>
-    	<li>image 2 is my background with raven and some text</li>
-    	<li>image 3 is my header</li>
-        <li>image 4 is my footer</li>
-        <li>image 5 is my navigation shadow</li>
-    </ul>
-    
-    </div>
-    
-  </body>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 10,
+    center: new google.maps.LatLng(34.0122, -118.4524),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+
+#container1 { width: 900px; height: auto; margin-left: auto; margin-right: auto; }
+
+body { 
+  background: url(images/under_construction_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header1 { width: 448px; heiht: 120px; float: left; }
+
+#nav1 { width: 452px; height: 120px; float: left; }
+
+	#nav1 img { vertical-align: bottom; }
+
+#content1 {
+	font-size: 16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #a90431;
+	position: relative;
+	top: 60px;
+	width: 200px;
+}
+
+#map-canvas {left: 60%; width: 350px; height: 350px; }
+
+#footer1 { font-size: 30px; font-weight: normal; font-family:Georgia, "Times New Roman", Times, serif; color: #a90431; }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="container1">
+
+<div id="header1"><a href="under_construction.html"><img src="images/headerlogo_01.jpg" width="448" height="120" /></a></div> 
+
+<div id="nav1"><a href="home.html"><img src="images/headerhome_01.jpg" width="197" height="65" /></a><a href="pricing.html"><img src="images/headerpricing_01.jpg" width="255" height="65" /></a><br/><a href="gallery.html"><img src="images/headergallery_01.jpg" width="217" height="55" /></a><a href="contact.html"><img src="images/headercontact_01.jpg" width="235" height="55" /></a></div> 
+
+<div id="content1"><h1>Contact:</h1>
+<h4>RavenPheat Productions, LLC</h4>
+John Mahoney 
+<br/>623 215 8654<br/> audiostudio@cox.net<br/>
+<br/>Skype Address:<br/>john.mahoney61
+</div>
+
+<div id="map-canvas"></div>
+
+<div id="footer1">
+<br/>
+<br/>
+<br/>
+<br/>
+Copyright 2013. All Rights Reserved.</div>
+
+</div>
+
+</body>
 
 </html>
